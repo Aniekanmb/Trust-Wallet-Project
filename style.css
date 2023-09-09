@@ -1,8 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap");
 * {
     padding: 0;
     margin: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+    font-family:"IBM Plex Sans", sans-serif;;
 }
+.container {
+  width: 100%;
+  height: 100vh;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+/* whakee's stylesheet starts here */
+.fifth-main {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-top: 2rem;
+  padding-left: 8rem;
+  padding-right: 10rem;
+  align-items: center;
+}
+.fifth-main-text {
+  width: 50%;
+}
+.fifth-main-image {
+  width: 50%;
+}
+.fifth-main img {
+  width: 100%;
+  height: 100%;
+}
+.fifth-main h1 {
+  font-size: 40px;
+  font-weight: 700;
+}
+.fifth-main p {
+  padding-top: 1rem;
+  line-height: 1.5;
+  font-size: 20px;
+}
+/* media queries */
+@media (max-width: 900px){
+  .fifth-main{
+    padding: 10px 0 16px 16px;
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+    /* height: 900px; */
+  }
+  .fifth-main-image{
+    width: 100%;
+  }
+  .fifth-main-text{
+    width: 100%;
+  }
+  .fifth-main h1{
+    font-size: 2rem;
+    font-weight: 700;
+  }
+}
+/* sixth main */
+.sixth-main {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-top: 2rem;
+  padding-left: 8rem;
+  padding-right: 10rem;
+  align-items: center;
+}
+.sixth-main-text {
+  width: 50%;
+}
+.sixth-main-image {
+  width: 50%;
+}
+.sixth-main img {
+  width: 100%;
+  height: 100%;
+}
+.sixth-main h1 {
+  font-size: 40px;
+  font-weight: 700;
+}
+.sixth-main p {
+  padding-top: 1rem;
+  line-height: 1.5;
+  font-size: 20px;
+}
+/* media queries */
+@media (max-width: 900px){
+  .sixth-main{
+    padding:10px 0 16px 16px;
+    display: flex;
+    flex-direction: column;
+    text-align: center; 
+  }
+  .sixth-main-image{
+    width: 100%;
+  }
+  .sixth-main h1{
+    font-size: 2rem;
+  }
+  .sixth-main-text{
+    width: 100%;
+  }
+  .sixth-main p{
+    padding: 16px 0 12px 0px;
+  }
+}
+/* whakees stylesheet end here */
 
 /* Aniekans Stylesheet Starts Here */
 .fifthportion{
