@@ -1,3 +1,49 @@
-*{
+* {
     padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.fifthportion{
+    text-align: center;
+    font-size: 30px;
+}
+.fifthportion p{
+    font-size: 25px;
+}
+
+.imageportion{
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-between;
+    justify-content: space-around;
+}
+.firstimage p {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.secondimage p {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.thirdimage p {
+    font-size: 22px;
+    font-weight: 700;
+}
+img{
+    width: 300px;
+    height: 200px;
+}
+.fifthportion button{
+    margin-top: 4rem;
+    color: white;
+    background-color: #0b65c6;
+    border: none;
+    border-radius: 5px;
+    width: 150px;
+    height: 50px;
+    font-size: 15px;
+    font-weight: 600;
 }
