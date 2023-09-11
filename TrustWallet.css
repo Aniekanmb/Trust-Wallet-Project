@@ -1,0 +1,607 @@
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500&family=Poppins:wght@300;500&family=Roboto&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "IBM Plex Sans", sans-serif;
+    ;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    font-family: "IBM Plex Sans", sans-serif;
+}
+
+/* Navbar Starts Here */
+.navbar {
+    background-color: #0b65c6;
+    color: #fff;
+    overflow: hidden;
+}
+
+.navbar a {
+    margin-right: 40px;
+    float: right;
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 14px 26px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #004AA7;
+}
+
+.navbar-logo {
+    float: left;
+    padding: 10px;
+}
+
+.navbar-logo  {
+   
+    margin-left: 20px;
+    color: #0b65c6;
+    height: 50px;
+    background-color: white;
+    width: 50px;
+    justify-content: center;
+    border-radius: 5px;
+    align-items: center;
+}
+
+.nav{
+    display: flex;
+    margin-top: 20px;
+}
+@media (max-width: 768px) {
+    .navbar a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+    .navbar-logo {
+        float: none;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .navbar-logo i {
+        height: auto;
+    }
+}
+/* Navbar Ends Here */
+
+/* Font Family Import From GoogleFonts */
+
+
+/* CSS of The Body Tag */
+body{
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: #161C2D;
+}
+
+/* CSS of the Div Named Head */ 
+.head{
+    display: flex;
+    margin-left: 20%;
+    margin-top: 5%;
+}
+
+/* CSS of the Images Added */
+img{
+    width: 30px;
+    height: 30px;
+    margin-top: 5px;
+}
+
+
+.card, .exchange, .lock{
+    display: flex;
+    
+}
+
+.exchange, .lock{
+    margin-left: 10%;
+}
+
+.lock img{
+    width: 25px;
+    height: 25px;
+}
+/* End of CSS for the Images */
+
+/* CSS of the paragraphs used for the images */
+.headp{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+/* CSS for the hr tag */
+hr{
+    width: 60%;
+    margin-left: 19%;
+    margin-top: 3%;
+    color: rgb(248, 247, 247);
+    border: solid;
+    border-width: 0.1px;
+}
+
+/* CSS for the Div named Main */
+.main{
+    margin-top: 2%;
+}
+
+.title{
+    text-align: center;
+}
+
+h1{
+    font-size: 40px;
+}
+
+/* CSS of the paragraphs used for the Title Div */
+.titlep{
+    font-size: 25px;
+    margin-top: 20px;
+    /* font-weight: 500; */
+}
+
+/* CSS for the Div Named Split */
+.split{
+    display: flex;
+    margin-top: 2%;
+    margin-left: 15%;
+}
+
+/* Joint CSS for the Divs named Boxes */
+.box1, .box2, .box3, .box4, .box5, .box6{
+    display: flex;
+    border-style: solid;
+    border-color: rgb(238, 238, 238);
+    border-width: 0.1px;
+    height: 12vh;
+}
+
+/* CSS Rounds The Edges of The Boxes */
+.box1, .box4{
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.box3, .box6{
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+/* End of CSS That Rounds The Edges of The Boxes */
+
+/* CSS for The Paragraphs used In the Boxes */
+.boxp{
+    margin-top: 40px;
+    margin-left: 10px;
+    font-size: 18px;
+    /* font-weight: 500; */
+}
+
+.boxp1{
+    margin-top: 40px;
+    margin-left: 4px;
+    font-size: 18px;
+    /* font-weight: 500; */
+}
+/* End of CSS for The Paragraphs used In the Boxes */
+
+/* CSS for the Id Named Check1 */
+#check1{
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+}
+
+/* CSS of the Left and Right side of the Div Named Split */
+.left, .right{
+    width: 42%;
+}
+
+.right{
+    padding-left: 3%;
+}
+
+/* CSS for the Checkbox Input that Turns it from a Square to a Circle */
+.round {
+    position: relative;
+    margin-top: 43px;
+    margin-left: 30px;
+  }
+  
+  .round label {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 15px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 15px;
+  }
+  
+  .round label:after {
+    border: 2px solid #fff;
+    border-top: none;
+    border-right: none;
+    content: "";
+    height: 3px;
+    left: 2.5px;
+    opacity: 0;
+    position: absolute;
+    top: 3px;
+    transform: rotate(-45deg);
+    width: 6px;
+}
+  
+.round input[type="checkbox"] {
+    visibility: hidden;
+}
+  
+.round input[type="checkbox"]:checked + label {
+    background-color: #32A071;
+    border-color: #32A071;
+}
+  
+.round input[type="checkbox"]:checked + label:after {
+    opacity: 1;
+}
+/* End of CSS for the Transformation of the Checkbox Input from a Square to a Circle */
+
+/* CSS For The Button */
+.button{
+   margin-left: 47%;
+   margin-top: 30px;
+}
+
+button{
+    width: 20%;
+    height: 8vh;
+    border-radius: 5px;
+    border-style: none;
+    color: #fff;
+    background-color: #3375BB;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+button:hover{
+    background-color: #0953A2;
+}
+/* End of CSS For The Button */
+
+
+@media (max-width: 600px){
+    .head{
+        display: block;
+        gap: 100px;
+    }
+
+    .headp{
+        font-size: 20px;
+        margin-top: 13px;
+    }
+
+    img{
+        width: 40px;
+        height: 40px;
+        margin-top: 8px;
+    }
+
+    .exchange{
+        margin-left: 20px;
+        margin-top: 15px;
+    }
+
+    .lock{
+        margin-left: 40px;
+        margin-top: 15px;
+    }
+
+    .lock img{
+        width: 35px;
+        height: 35px;
+    }
+
+    h1{
+        font-size: 30px;
+        margin-top: 10%;
+    }
+
+    .titlep{
+        font-size: 20px;
+    }
+
+    hr{
+        width: 100%;
+        margin-left: 0;
+        margin-top: 7%;
+    }
+
+    .split{
+        display: block;
+        margin-left: 5%;
+        margin-top: 8%;
+    }
+
+    .left, .right{
+        width: 90%;
+    }
+
+    .right{
+        padding-left: 0%;
+    }
+
+    button{
+        width: 50%;
+    }
+
+    .button{
+        margin-left: 35%;
+    }
+
+    .boxp, .boxp1{
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 800px){
+    .head{
+        display: block;
+        gap: 100px;
+        margin-left: 30%;
+    }
+
+    .headp{
+        font-size: 20px;
+        margin-top: 13px;
+    }
+
+    img{
+        width: 40px;
+        height: 40px;
+        margin-top: 8px;
+    }
+
+    .exchange{
+        margin-left: 20px;
+        margin-top: 15px;
+    }
+
+    .lock{
+        margin-left: 40px;
+        margin-top: 15px;
+    }
+
+    .lock img{
+        width: 35px;
+        height: 35px;
+    }
+
+    h1{
+        font-size: 30px;
+        margin-top: 10%;
+    }
+
+    .titlep{
+        font-size: 20px;
+    }
+
+    hr{
+        width: 100%;
+        margin-left: 0;
+        margin-top: 7%;
+    }
+
+    .split{
+        display: block;
+        margin-left: 5%;
+        margin-top: 8%;
+    }
+
+    .left, .right{
+        width: 90%;
+    }
+
+    .right{
+        padding-left: 0%;
+    }
+
+    button{
+        width: 50%;
+    }
+
+    .button{
+        margin-left: 35%;
+    }
+
+    .boxp, .boxp1{
+        font-size: 20px;
+        margin-top: 37px;
+    }
+}
+/* whakee's stylesheet starts here */
+.fifth-main {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 2rem;
+    padding-left: 8rem;
+    padding-right: 10rem;
+    align-items: center;
+}
+
+.fifth-main-text {
+    width: 50%;
+}
+
+.fifth-main-image {
+    width: 50%;
+}
+
+.fifth-main img {
+    width: 100%;
+    height: 100%;
+}
+
+.fifth-main h1 {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.fifth-main p {
+    padding-top: 1rem;
+    line-height: 1.5;
+    font-size: 20px;
+}
+
+/* media queries */
+@media (max-width: 900px) {
+    .fifth-main {
+        padding: 10px 0 16px 16px;
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+        /* height: 900px; */
+    }
+
+    .fifth-main-image {
+        width: 100%;
+    }
+
+    .fifth-main-text {
+        width: 100%;
+    }
+
+    .fifth-main h1 {
+        font-size: 2rem;
+        font-weight: 700;
+    }
+}
+
+/* sixth main */
+.sixth-main {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 2rem;
+    padding-left: 8rem;
+    padding-right: 10rem;
+    align-items: center;
+}
+
+.sixth-main-text {
+    width: 50%;
+}
+
+.sixth-main-image {
+    width: 50%;
+}
+
+.sixth-main img {
+    width: 100%;
+    height: 100%;
+}
+
+.sixth-main h1 {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.sixth-main p {
+    padding-top: 1rem;
+    line-height: 1.5;
+    font-size: 20px;
+}
+
+/* media queries */
+@media (max-width: 900px) {
+    .sixth-main {
+        padding: 10px 0 16px 16px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .sixth-main-image {
+        width: 100%;
+    }
+
+    .sixth-main h1 {
+        font-size: 2rem;
+    }
+
+    .sixth-main-text {
+        width: 100%;
+    }
+
+    .sixth-main p {
+        padding: 16px 0 12px 0px;
+    }
+}
+
+/* whakees stylesheet end here */
+
+/* Aniekans Stylesheet Starts Here */
+.fifthportion {
+    text-align: center;
+    font-size: 30px;
+}
+
+.fifthportion p {
+    font-size: 25px;
+}
+
+.imageportion {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-between;
+    justify-content: space-around;
+}
+
+.firstimage p {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.secondimage p {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.thirdimage p {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.imageportion img {
+    width: 300px;
+    height: 200px;
+}
+
+.fifthportion button {
+    margin-top: 4rem;
+    color: white;
+    background-color: #0b65c6;
+    border: none;
+    border-radius: 5px;
+    width: 150px;
+    height: 50px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+/* Aniekans Style Sheet ends Here */
