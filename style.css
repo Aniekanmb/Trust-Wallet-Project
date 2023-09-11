@@ -12,6 +12,101 @@
   font-family: "IBM Plex Sans", sans-serif;
 }
 /* whakee's stylesheet starts here */
+/* mini-wrapper */
+.mini-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-top: 2rem;
+  padding-left: 8rem;
+  padding-right: 10rem;
+  align-items: center;
+}
+.mini-wrapper-text {
+  width: 50%;
+}
+.mini-wrapper p {
+  padding-top: 1rem;
+  line-height: 1.5;
+  font-size: 18px;
+}
+.mini-wrapper-image{
+  width: 50%;
+}
+.mini-wrapper-image img{
+  width: 100%;
+  height: 100%;
+}
+/* media queries */
+@media (max-width: 900px){
+  .mini-wrapper{
+    padding: 0 0 16px 16px;
+    margin-top: 51rem;
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+    /* height: 900px; */
+  }
+  .mini-wrapper-text{
+    width: 100%;
+  }
+  .mini-wrapper-image{
+    width: 100%;
+  }
+  .mini-wrapper h1{
+    font-size: 2rem;
+  }
+}
+.fourth-main {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-top: 2rem;
+  padding-left: 8rem;
+  padding-right: 10rem;
+  align-items: center;
+}
+.fourth-main-text {
+  width: 50%;
+}
+.fourth-main-image {
+  width: 50%;
+}
+.fourth-main img {
+  width: 100%;
+  height: 100%;
+}
+.fourth-main h1 {
+  font-size: 40px;
+  font-weight: 700;
+}
+.fourth-main p {
+  padding-top: 1rem;
+  line-height: 1.5;
+  font-size: 20px;
+  padding-right: 4rem;
+}
+/* media queries */
+@media (max-width: 900px){
+  .fourth-main{
+    padding:10px 0 16px 16px;
+    display: flex;
+    flex-direction: column;
+    text-align: center; 
+  }
+  .fourth-main-image{
+    width: 100%;
+  }
+  .fourth-main h1{
+    font-size: 2rem;
+  }
+  .fourth-main-text{
+    width: 100%;
+  }
+  .fourth-main p{
+    padding: 16px 0 16px 16px;
+  }
+}
 .fifth-main {
   display: flex;
   justify-content: space-between;
@@ -124,8 +219,15 @@
 .imageportion{
     margin-top: 5rem;
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     justify-content: space-around;
+}
+@media (max-width:900px) {
+  .imageportion{
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+}
 }
 .firstimage p {
     font-size: 22px;
@@ -144,6 +246,7 @@
 img{
     width: 300px;
     height: 200px;
+    margin-top: 1rem;
 }
 .fifthportion button{
     margin-top: 4rem;
